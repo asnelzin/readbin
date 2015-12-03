@@ -11,8 +11,6 @@ INSTALLED_APPS += (
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-SOUTH_TESTS_MIGRATE = False
-
 CELERY_ALWAYS_EAGER = True
 CELERY_EAGER_PROPAGATES_EXCEPTIONS = True
 
