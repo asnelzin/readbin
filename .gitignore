@@ -3,4 +3,5 @@
 *.css.map
 !.gitkeep
 !.gitignore
+!.travis.yml
 */settings/local.py

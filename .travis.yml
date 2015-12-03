@@ -1,0 +1,15 @@
+language: python
+python: 2.7
+services: postgresql
+env: DJANGO=1.8.5
+before_install:
+  - export DJANGO_SETTINGS_MODULE=readbin.settings.test
+  - export PYTHONPATH=$HOME/builds/asnelzin/readbin
+  - export PIP_USE_MIRRORS=true
+install:
+  - pip install -r requirenments/base.txt
+before_script:
+  - psql -U postgres -c "CREATE DATABASE readbin;"
+  - python manage.py migrate
+script:
+  - python manage.py test tests
