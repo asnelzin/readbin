@@ -1,4 +1,4 @@
-from .base import *
+from base import *
 
 ADMINS = (
     ('Alexander Nelzin', 'asnelzin@gmail.com')
