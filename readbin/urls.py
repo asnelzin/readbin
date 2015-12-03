@@ -6,6 +6,7 @@ from django.contrib import admin
 
 urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
+    url(r'', include('readbin.apps.bin.urls', namespace='bin'))
 )
 
 if settings.DEBUG:

@@ -85,7 +85,7 @@ SECRET_KEY = 'wq9(((zl-eu6b1a(z58x+y&k3dbsp!lk&#g&o#5^bsq-o&5eoi'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'readbin/templates')],
+        'DIRS': [os.path.join(PROJECT_ROOT, 'readbin/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
