@@ -34,7 +34,7 @@ TIME_ZONE = 'Europe/Moscow'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'ru'
+LANGUAGE_CODE = 'en'
 
 # If you set this to False, Django will make some optimizations so as not
 # to load the internationalization machinery.
@@ -128,6 +128,8 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.humanize',
     'django.contrib.sitemaps',
+
+    'rest_framework',
 
     'readbin.apps.bin',
 )
