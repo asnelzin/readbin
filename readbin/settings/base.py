@@ -78,10 +78,6 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 )
 
-# Make this unique, and don't share it with anybody.
-SECRET_KEY = 'wq9(((zl-eu6b1a(z58x+y&k3dbsp!lk&#g&o#5^bsq-o&5eoi'
-
-
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
