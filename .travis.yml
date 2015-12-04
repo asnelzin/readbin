@@ -9,6 +9,5 @@ install:
   - pip install -r requirements/base.txt
 before_script:
   - psql -U postgres -c "CREATE DATABASE readbin;"
-  - python manage.py migrate
 script:
   - python manage.py test tests
