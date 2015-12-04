@@ -18,3 +18,5 @@ if 'TRAVIS' in os.environ:
         }
     }
 
+    SECRET_KEY = 'TEST_SECRET_KEY'
+
