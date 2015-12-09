@@ -1,8 +1,8 @@
 from django import forms
 from django.contrib.auth.admin import UserChangeForm as BaseUserChangeForm
+from django.contrib.auth.models import User
 
 from rest_framework.authtoken.models import Token
-from readbin.apps.accounts.models import User
 
 
 class UserChangeForm(BaseUserChangeForm):
@@ -10,7 +10,8 @@ class UserChangeForm(BaseUserChangeForm):
 
     class Meta:
         model = User
-        fields = '__all__'
+        fields = ('username', 'password', 'is_active', 'is_staff',
+                  'is_superuser', 'groups')
 
     def __init__(self, *args, **kwargs):
         super(UserChangeForm, self).__init__(*args, **kwargs)
